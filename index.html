@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR vs MI</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=NqymF4AVYR3KVddf0wgUOgLQqmx9Yr2qT9aXC-_v6fN1rJ9nKT_1tOwWaf5UCf-AFH75pUOG0IvPbdYYtNW03mqOffjxdcxaWdfz31he9fj9sx37oVYTiuPTgSR60jvOXcs643gNUSsAqSJ0aRRIxDPCZi5BQRw8pb9dtYcvLS_NEdEnP_DoRpAFiIWiSnwCa0fMFYyKr212xBrTlbbBWUvoE9VCLeZi0k6A9QBcByjk_Fr2gDOQ2_ZltSliNYcX_wioW0G_DW1IzvHioatEnmg5j-2LmyIxBiN-XJkI-_M1zgG2MGnkSyc0RWerqxw9e-6BT9e5vVOGc8PU4d2z2E3G598RNzSPcKZGQHPAwl7wse7w5Jpq8NsQGdI_NkFjG2k6knjtL8a5nQmsrXn_gv5n2cPC3cSsS6A_xV8ZY2DLqOo1qC4TxZFGJnMkRGE6eYd0r3C3I-I2u0qljVhjLw" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9kb2MtMTAtMGstZG9jcy5nb29nbGV1c2VyY29udGVudC5jb20vZG9jcy9zZWN1cmVzYy91YjFucmF0NmVmMzJham1tbXBiYzNqcThvaWFpa3FzaS9naWtrNjk1OXBwc2lxbHRtNzAzZHNydTgwbHJjM2VxYy8xNjM2MTk2OTI1MDAwLzAyODE4ODIyMDU0MzEzNTE3MTg2LzAyODE4ODIyMDU0MzEzNTE3MTg2LzEwU0JOeDFsT2lvdFJUM3RLLVZfbDFkQnY4R3FJRWVOeT9lPWRvd25sb2FkJmF1dGh1c2VyPTAmbm9uY2U9OWRlMnJwN2Y3bnZrMiZ1c2VyPTAyODE4ODIyMDU0MzEzNTE3MTg2Jmhhc2g9ZG12Zjdpa2ZhcGU3NGVrZ2hvcDExbzJlMjh0OHJlazg"/><script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">RR vs MI</h1>
+        <canvas id="score" height="100%"></canvas>
+    </div>
+
+    <script>
+            const labels = [
+       
+        '4 Overs',
+        '8 Overs',
+        '30 Overs',
+        '45 Overs'
+      ];
+const data = {
+  labels: labels,
+  datasets: [{
+    label: 'RR',
+    data: [30,50,130,140],
+       borderColor: 'rgb(75, 192, 192)',
+    tension: 0.1
+  }]
+};
+
+
+const config = {
+  type: 'line',
+  data: data,
+  options: {},
+};
+
+        
+        var myChart = new Chart(document.getElementById('score'),config);
+        
+    
+
+    </script>
+
+
+</body>
+</html>
